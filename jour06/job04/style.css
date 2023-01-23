@@ -1,0 +1,114 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+
+.section{
+    width: 20vw;
+    height: 15vh;
+    background-color: #88c1d0;
+}
+
+header{
+    border-bottom: 1px solid black;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    font-size: 200%;
+}
+
+li{
+    list-style: none;
+    clear: right;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+label{
+    margin: 0 40px;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: top;
+}
+
+#toggle{
+    display: none;
+}
+
+
+@media screen and (max-width: 1599px) and (min-width:768px){
+    main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5vh;
+    }
+
+    .section{
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5vh;
+    }
+
+    .section{
+        width: 80vw;
+    }
+
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100vw;
+        display: none;
+    }
+    
+    .menu li a{
+        display: block;
+        width: 100vw;
+        border-bottom: 1px solid black;
+    }
+
+    /* checking if the input is done we display the menu */
+    #toggle:checked + .menu {
+        display: block;
+        height: fit-content;
+        position: relative;
+        background-color: white;
+    }
+    
+}

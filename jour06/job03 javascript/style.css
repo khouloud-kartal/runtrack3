@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    gap: 5vh;
+    width: auto;
+    height: auto;
+}
+
+.section{
+    width: 20vw;
+    height: 15vh;
+    background-color: #88c1d0;
+}
+
+/* @media screen and (max-width: 1599px) and (min-width:768px){
+    body{
+        flex-wrap: wrap;
+    }
+
+    .section{
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .section{
+        width: 80vw;
+    }
+} */

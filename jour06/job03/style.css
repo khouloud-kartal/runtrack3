@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+
+.section{
+    width: 20vw;
+    height: 15vh;
+    background-color: #88c1d0;
+}
+
+@media screen and (max-width: 1599px) and (min-width:768px){
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5vh;
+    }
+
+    .section{
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5vh;
+    }
+
+    .section{
+        width: 80vw;
+    }
+}
