@@ -14,9 +14,11 @@
         <input type="text" name="nom" id="nom">
         <label for="nom" placeholder="nom">Nom</label>
         <select name="type" id="type">
-            <!-- <option value="type">Type</option> -->
+            <option value="type">Type</option>
         </select>
         <input type="button" value="filtrer" id="button">
     </form>
+
+    <div id="results"></div>
 </body>
 </html>

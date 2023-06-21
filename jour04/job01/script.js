@@ -1,4 +1,4 @@
-const expression = document.getElementById('button');
+ const expression = document.getElementById('button');
 
 
 //créer une fonction pour récupérer et afficher le contenu du ficher texte

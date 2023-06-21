@@ -8,8 +8,15 @@
     <title>Job 01</title>
 </head>
 <body>
+
+<style>
+    button{
+        width: 100px; 
+        height: 40px;
+    }
+</style>
     
-    <button id="button"></button>
+    <button id="button">Cklick me</button>
 
     <div id="para"></div>
 
